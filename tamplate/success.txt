@@ -1,0 +1,28 @@
+Здравствуйте.
+В CЭ ООО «ОНЭЛИЯ» рассмотрено обращение об оформлении электронных билетов.
+Логин: «{{ login }}» зарегистрирован на адрес электронной почты: «{{ email }}».
+
+По системе журналирования {{ date_time_create }} (МСК) на портале ticket.rzd.ru оформлен и оплачен заказ № {{ order_id }}
+{#бланки в заказе#}
+Заказ включает ЭБ:{% for blank in blanks_in_order['blanks'] %} {{ blank }}{{''}}{% endfor %}
+
+{% if blanks_in_order['meals']|count > 0 %}Заказ включает ЭКРС:{% for meal in blanks_in_order['meals'] %} {{ meal }}{% endfor %}{{' 
+'}}{% endif -%}
+
+{% if blanks_in_order['baggage']|count > 0 %}Заказ включает ЭБК:{% for bagg in blanks_in_order['baggage'] %} {{ bagg }}{% endfor %}{{' 
+'}}{% endif -%}
+
+{% if blanks_in_order['insurance']|count > 0 %}Заказ включает ЭСП:{% for insur in blanks_in_order['insurance'] %} {{ insur }}{% endfor %}{{' 
+'}}{% endif -%}
+
+{#блоки маршрутов в заказе#}
+{% for block in blocks %}
+{{''}}
+{{ block['route']}}
+Поезд: {{block['train_number']}}
+Отправление: {{block['departure_date_time']}} (МСК)
+{% for blank_number in block['blank_numbers'] %}
+Статус {{ blank_number}}
+{% endfor %}
+{% endfor %}
+
