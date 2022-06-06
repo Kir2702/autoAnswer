@@ -265,8 +265,8 @@ def return_date_found(confirm_data, blank):
 def get_confirm(orderid):
     actionsearch = "/order/confirm"
     data = {"orderid":orderid, "actionsearch":actionsearch, "status":'200'}
-    headers = {"Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0aWNrZXRfdGVleF8xIiwicm9sZXMiOiJvcCIsImlhdCI6MTYwMzIxMDczNn0.bqFmtg8gOOdDNfkj1XPgiZ8Z31GgqvnRcyJ-k1Blqdc"}
-    r = requests.post('https://journal.onelya.ru/audit/v1/search', headers = headers, json=data, timeout=10)
+    headers = {"Authorization": ''}
+    r = requests.post('https://' headers = headers, json=data, timeout=10)
     respons = json.loads(r.text)
     confirm = respons[0].get('response')
     for i in range(len(confirm)):
@@ -279,8 +279,8 @@ def get_confirm(orderid):
 def get_get_receipts(orderid):
     actionsearch = "/auth/getTickets"
     data = {"orderid":orderid, "actionsearch":actionsearch, "status":'200'}
-    headers = {"Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0aWNrZXRfdGVleF8xIiwicm9sZXMiOiJvcCIsImlhdCI6MTYwMzIxMDczNn0.bqFmtg8gOOdDNfkj1XPgiZ8Z31GgqvnRcyJ-k1Blqdc"}
-    r = requests.post('https://journal.onelya.ru/audit/v1/search', headers = headers, json=data, timeout=10)
+    headers = {"Authorization": ""}
+    r = requests.post('https://', headers = headers, json=data, timeout=10)
     respons = json.loads(r.text)
 
     links = []
