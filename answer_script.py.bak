@@ -23,11 +23,11 @@ def get_answer(orderid, values):
     try:
         bo = bo_data(orderid)
     except:
-        return str("превышено время ожидания ответа от ***.******.ru")
+        return str("превышено время ожидания ответа от rgw.onelya.ru")
     try:
         sj = sj_data(orderid)
     except:
-        return str("превышено время ожидания ответа от *******.******.ru")
+        return str("превышено время ожидания ответа от journal.onelya.ru")
     answer_type = order_type.type(bo)
     if answer_type == 'success':
         if addition == False:
