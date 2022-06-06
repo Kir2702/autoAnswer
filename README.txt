@@ -4,4 +4,4 @@
 К сожалению все url и токены были удалены так как это внутренние ресурсы компании. Для запуска приложения нужно запустить GUI.pyw
 
 Схема:
-![alt text] (https://github.com/Kir2702/autoAnswer/blob/main/schem.png)
+![alt text](https://github.com/Kir2702/autoAnswer/blob/main/schem.png)
