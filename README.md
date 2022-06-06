@@ -11,6 +11,6 @@
 ![schem.png](https://github.com/Kir2702/autoAnswer/blob/main/schem.png)
 
 
-После обращения GUI к answer_script.py GUI блокировался и запускалась гифка с котиком, до момента пока не будет получен ответ от answer_script.py.
+После обращения GUI к answer_script.py GUI блокировался и запускалась loading.gif, до момента пока не будет получен ответ от answer_script.py.
 
 P.S. Фактически в ряде случаев generator  тоже может посылать API запросы, но это не правильно. Так что сделаем вид будто это не так)
