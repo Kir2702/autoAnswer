@@ -6,8 +6,8 @@ import re
 
 def check_inex_data_search(login):
     data = {"login":login, "actionsearch": '/auth/login', "status": '401'}
-    headers = {"Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0aWNrZXRfdGVleF8xIiwicm9sZXMiOiJvcCIsImlhdCI6MTYwMzIxMDczNn0.bqFmtg8gOOdDNfkj1XPgiZ8Z31GgqvnRcyJ-k1Blqdc"}
-    r = requests.post('https://journal.onelya.ru/audit/v1/search', headers = headers, json=data, timeout=20)
+    headers = {"Authorization": ""}
+    r = requests.post('https://', headers = headers, json=data, timeout=20)
     respons = json.loads(r.text)
     return respons
     
