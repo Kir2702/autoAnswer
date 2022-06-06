@@ -4,4 +4,4 @@
 К сожалению все url и токены были удалены так как это внутренние ресурсы компании. Для запуска приложения нужно запустить GUI.pyw
 
 Схема:
-https://img001.prntscr.com/file/img001/L-BbeBItSxmHFXTCIn-teg.png
+![alt text] https://img001.prntscr.com/file/img001/L-BbeBItSxmHFXTCIn-teg.png
