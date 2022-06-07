@@ -1,4 +1,4 @@
-![GUI.jpg](https://github.com/Kir2702/autoAnswer/blob/main/GUI.jpg)
+![GUI.jpg](https://github.com/Kir2702/myScreenshots/blob/main/GUI.jpg)
 
 "Программа" для генерации ответа.
 Написал во время работы в технической поддержке ticket.rzd.ru. Суть программы в формировании шаблонного ответа пользователю. Позже добавил разные шаблоны ответов, возможность детализации шаблонного ответа (Цены, Тарифы и т.д.) и возможность дополнять ответ шаблонными отписками из папки "additions".
@@ -10,7 +10,7 @@
 ## Схема:
 
 
-![schem.png](https://github.com/Kir2702/autoAnswer/blob/main/schem.png)
+![schem.png](https://github.com/Kir2702/myScreenshots/blob/main/schem.png)
 
 
 При запуске, GUI сохранял в память шаблонны из папки "additions".
