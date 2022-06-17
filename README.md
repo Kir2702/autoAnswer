@@ -10,7 +10,7 @@
 ## Схема:
 
 
-![schem.png](https://github.com/Kir2702/myScreenshots/blob/main/schem.png)
+![schem.png](https://github.com/Kir2702/myScreenshots/blob/main/autoAnswerSchem.png)
 
 
 При запуске, GUI сохранял в память шаблонны из папки "additions".
