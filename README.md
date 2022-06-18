@@ -13,7 +13,7 @@
 ![schem.png](https://github.com/Kir2702/myScreenshots/blob/main/autoAnswerSchem.png)
 
 
-При запуске, GUI сохранял в память шаблонны из папки "additions".
+При запуске, GUI сохраняет в память шаблонны из папки "additions".
 
 После обращения GUI к answer_script.py GUI блокируется и запускается loading.gif, до момента пока не будет получен ответ от answer_script.py.
 
